@@ -1,0 +1,240 @@
+{
+  "ReportVersion": "2018.1.6.0",
+  "ReportGuid": "f58837d348894aeba5d39e0519396b4a",
+  "ReportName": "Report",
+  "ReportAlias": "Report",
+  "ReportCreated": "/Date(1518475454000+0100)/",
+  "ReportChanged": "/Date(1518529397505+0100)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class Report : Stimulsoft.Report.StiReport\r\n    {\r\n        public Report()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
+  "ReferencedAssemblies": {
+    "0": "System.Dll",
+    "1": "System.Drawing.Dll",
+    "2": "System.Windows.Forms.Dll",
+    "3": "System.Data.Dll",
+    "4": "System.Xml.Dll",
+    "5": "Stimulsoft.Controls.Dll",
+    "6": "Stimulsoft.Base.Dll",
+    "7": "Stimulsoft.Report.Dll"
+  },
+  "Dictionary": {
+    "DataSources": {
+      "0": {
+        "Ident": "StiMySqlSource",
+        "Name": "Źródłodanych2",
+        "Alias": "Źródłodanych2",
+        "NameInSource": "Połączenia",
+        "SqlCommand": "SELECT Obrazek FROM cookies WHERE id = 1"
+      },
+      "1": {
+        "Ident": "StiMySqlSource",
+        "Name": "Źródłodanych",
+        "Alias": "Źródłodanych",
+        "NameInSource": "Połączenia",
+        "SqlCommand": "SELECT * FROM cookies"
+      },
+      "2": {
+        "Ident": "StiMySqlSource",
+        "Name": "cookies",
+        "Alias": "cookies",
+        "Columns": {
+          "0": {
+            "Name": "ID",
+            "Index": -1,
+            "NameInSource": "ID",
+            "Alias": "ID",
+            "Type": "System.Int16"
+          },
+          "1": {
+            "Name": "Obrazek",
+            "Index": -1,
+            "NameInSource": "Obrazek",
+            "Alias": "Obrazek",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Podglad",
+            "Index": -1,
+            "NameInSource": "Podglad",
+            "Alias": "Podglad",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "Wybrane_czesci",
+            "Index": -1,
+            "NameInSource": "Wybrane_czesci",
+            "Alias": "Wybrane_czesci",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Połączenia",
+        "SqlCommand": "select * from cookies"
+      },
+      "3": {
+        "Ident": "StiMySqlSource",
+        "Name": "cookies2",
+        "Alias": "cookies2",
+        "Columns": {
+          "0": {
+            "Name": "ID",
+            "Index": -1,
+            "NameInSource": "ID",
+            "Alias": "ID",
+            "Type": "System.Int16"
+          },
+          "1": {
+            "Name": "Obrazek",
+            "Index": -1,
+            "NameInSource": "Obrazek",
+            "Alias": "Obrazek",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Podglad",
+            "Index": -1,
+            "NameInSource": "Podglad",
+            "Alias": "Podglad",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "Wybrane_czesci",
+            "Index": -1,
+            "NameInSource": "Wybrane_czesci",
+            "Alias": "Wybrane_czesci",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Połączenia",
+        "SqlCommand": "select * from cookies"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiMySqlDatabase",
+        "Name": "Połączenia",
+        "Alias": "Połączenia",
+        "ConnectionStringEncrypted": "xXT16M5W0/VpSZyYRD1yJ8JUeyjNA6OERkrZoeoENWPfVNEpTllTxe1JgNhOPWVj0Xr3iWFUCZlnR7ncZARlF9hwTUtNWev96hu9iMgYd9c="
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiPage",
+      "Name": "Page1",
+      "Guid": "71b6b7f6d74fde2cf867492cc9d3343f",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;2;;;;;solid:Black",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiPageFooterBand",
+          "Name": "PageFooterBand1",
+          "ClientRectangle": "0,24.9,19,2.8",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text2",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.4,1.5,18.2,1.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Copyright© Patryk Bąk, 2017-2018. Wszelkie prawa zastrzeżone."
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Times New Roman;16;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          }
+        },
+        "1": {
+          "Ident": "StiImage",
+          "Name": "Image1",
+          "Guid": "c6f4ec77fef0066d8874a8cf5cfbdfba",
+          "MinSize": "0,0",
+          "MaxSize": "0,0",
+          "ClientRectangle": "1.2,17.4,16.8,7",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "HorAlignment": "Center",
+          "VertAlignment": "Center",
+          "Border": ";;;;;;;solid:0,0,0",
+          "Brush": "solid:",
+          "MultipleFactor": 0.5,
+          "AspectRatio": true
+        },
+        "2": {
+          "Ident": "StiReportTitleBand",
+          "Name": "Tytuł",
+          "ClientRectangle": "0,0.4,19,3.6",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text1",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,0.8,19,2.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "<div style=\"text-align: center;\"><font style=\"font-size: 28px;\"><b>Konfiguracja samochodu</b></font></div>"
+              },
+              "Font": "Times New Roman;28;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression",
+              "TextQuality": "Wysiwyg",
+              "AllowHtmlTags": true
+            }
+          }
+        },
+        "3": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand1",
+          "ClientRectangle": "0,4.8,19,12.4",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:0,0,0",
+          "Brush": "solid:",
+          "BreakIfLessThan": 1.0,
+          "StartNewPageIfLessThan": 1.0,
+          "DataSourceName": "Źródłodanych"
+        }
+      },
+      "PageWidth": 21.0,
+      "PageHeight": 29.7,
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Margins": {
+        "Left": 1.0,
+        "Right": 1.0,
+        "Top": 1.0,
+        "Bottom": 1.0
+      }
+    }
+  }
+}
