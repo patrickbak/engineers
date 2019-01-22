@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <title>Car-conf</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href = "style1.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="media/icons/car_conf.png" class="img-responsive" style="height: 50px; width:50px; margin-top:-15px" alt="Menu"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-center">
+        <li><a href="conf.php">Konfigurator</a></li>
+        <li><a href="#">O aplikacji</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Third Container -->
+<div class="container-fluid bg-3 text-center">
+  <h2 class="margin">O aplikacji</h2>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Wyjaśnienie działania konfiguratora</h3>
+  <p>Użytkownik przechodzi przez kolejne kroki budowy auta. Najpierw musi wybrać rodzaj nadwozia, dopiero po tym jest możliwy wybór innych części.</p>
+  <p>Każdy element należy wybrać z listy dostępnej z prawej strony oraz zatwierdzić przyciskiem "Dalej".</p>
+  <p>Do konkretnego kroku można przejść klikając również na odpowiednią ikonę (po wyborze rodzaju nadwozia).</p>
+  <p>Po wykonaniu wszystkich kroków aplikacja przekieruje użytkownika do strony z podsumowaniem, gdzie może zapisać postępy w pliku pdf (przy pomocy przycisku "Zapisz").</p>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center row">
+  <h3 class="margin">Znaczenie ikon</h3><br>
+  <div class="col-xs-8 col-sm-6 col-md-3 col-lg-2 ">
+    <img src="media/icons/car%20choose%20icon.png" class="margin" style="width:240px; height:102px" alt="Rodzaj nadwozia">
+    <p>Wybór rodzaju nadwozia</p>
+  </div>
+  <div class="col-xs-8 col-sm-6 col-md-3 col-lg-2 ">
+    <img src="media/icons/chassis%202.png" class="margin" style="width:240px; height:62px" alt="Podwozie">
+    <p>Wybór podwozia</p>
+  </div>
+  <div class="col-xs-8 col-sm-6 col-md-3 col-lg-2 ">
+    <img src="media/icons/engine.png" class="margin" style="width:180px; height:102px" alt="Silnik">
+    <p>Wybór silnika</p>
+  </div>
+  <div class="col-xs-8 col-sm-6 col-md-3 col-lg-2 ">
+    <img src="media/icons/gearbox.png" class="margin" style="width:182px; height:120px" alt="Skrzynia biegów">
+    <p>Wybór skrzyni biegów</p>
+  </div>
+  <div class="col-xs-8 col-sm-6 col-md-3 col-lg-2 ">
+    <img src="media/icons/chassis.png" class="margin" style="width:240px; height:73px" alt="Wnętrze">
+    <p>Wybór wnętrza</p>
+  </div>
+  <div class="col-xs-8 col-sm-6 col-md-3 col-lg-2 ">
+    <img src="media/icons/car%20body.png" class="margin" style="width:240px; height:102px" alt="Karoseria">
+    <p>Wybór karoserii</p>
+  </div>
+  <div class="col-xs-8 col-sm-6 col-md-3 col-lg-2 ">
+    <img src="media/icons/tires.png" class="margin" style="width:120px; height:120px" alt="Koła">
+    <p>Wybór kół</p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Copyright&copy by Patryk Bąk 2017-2018. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+</body>
+</html>
